@@ -15,6 +15,13 @@ package VolatileKeyword_2;
  * </a>
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
+ * 
+ * Normally, the below program will stop running after you
+ * press return. But in some system it won't. As after
+ * Java optimize the code, one thread doesn't expect other
+ * thread to modify its fields, that is the value of
+ * running. So to guarantee it works on all system or OS,
+ * we use volatile. It prevents cache caching the variables.
  */
 import java.util.Scanner;
 
